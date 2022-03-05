@@ -1,29 +1,37 @@
 ﻿# Human-Resources-Analytics
 
-Human Resources Analytics
+## Human Resources Analytics
 17 de janeiro de 2022
-Visão Geral
+
+## Visão Geral
+
 A documentação do projeto de data science a seguir descreve um problema de negócio onde a empresa deseja entender os motivos que influenciam na saída de seus funcionários e se existe, através dos dados, uma forma de prever (se antecipar) a saída do colaborador.
-		Questões levantadas (dores do negócio):
-Quais fatores influenciam para um colaborador deixar a empresa?
-Como reter pessoas?
-Podemos nos antecipar e saber se um determinado colaborador vai sair da empresa?
-Como diminuir o turnover?
+
+##Questões levantadas (dores do negócio):
+
+- Quais fatores influenciam para um colaborador deixar a empresa?
+- Como reter pessoas?
+- Podemos nos antecipar e saber se um determinado colaborador vai sair da empresa?
+- Como diminuir o turnover?
 Obs: Este projeto foi realizado a partir do curso “Human Resource Analytics” ministrado pela Stack Tecnologias.
-Objetivo
+
+##Objetivo
 Explicar para os stakeholders através dos dados os principais motivos que levam os funcionários a deixarem a empresa, e por fim disponibilizar um recurso que permita que a empresa consiga realizar a predição para verificar se um colaborador vai ou não deixar a empresa com base nas mais importantes variáveis que impactam nessa decisão, sendo elas: carga de trabalho, nível de satisfação com a empresa e resultados de performance, número de projetos envolvidos, anos de empresa e histórico de acidentes de trabalho.
 Portanto, o projeto tem a finalidade de simular um problema real de Data Science, entender as expectativas e as necessidades do cliente, responder através de dados as questões levantadas (dores do negócio), testar hipóteses e colocar o modelo de Machine Learning produzido disponível de forma interativa e intuitiva para o cliente.
-Arquitetura da Solução Proposta
+
+##Arquitetura da Solução Proposta
 
 Para resolver esse problema de negócio, pensei em uma solução completa para armazenamento, tratamento, gestão e automatização de fluxos dos dados utilizando tecnologias como: Docker, Apache Airflow, Minio, MYSQL e Python com as seguintes bibliotecas: Seaborn, PyCaret, Scikit learn, Pandas, Streamlit, Matplotlib.
 
 Depois da infraestrutura devidamente criada e configurada, foram criados e modelados atributos relevantes para análise utilizando fontes de dados diversas como arquivos em formato xlsx, json e dados do Banco de Dados MySQL. O projeto pode ser dividido entre as seguintes etapas:
-Configuração do Ambiente
-Estruturação/Modelagem  dos Dados
-Desenvolvimento do Modelo de Machine Learning;
-Disponibilização da Solução;
 
-Configuração do Ambiente
+- Configuração do Ambiente
+- Estruturação/Modelagem  dos Dados
+- Desenvolvimento do Modelo de Machine Learning;
+- Disponibilização da Solução;
+
+##Configuração do Ambiente
+
 Foi utilizado o Docker a fim de virtualizar algumas aplicações utilizando o conceito de containers, o nosso banco de dados MySQL, nosso data lake Minio e nosso orquestrador de fluxos de trabalho Airflow, estão representados cada um respectivamente em um container.
 
 
