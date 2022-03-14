@@ -21,6 +21,8 @@ Portanto, o projeto tem a finalidade de simular um problema real de Data Science
 
 ## Arquitetura da Solução Proposta
 
+![Human Resources](https://github.com/matheusgameiro/Human-Resources-Analytics/blob/main/images%20human%20resources/arquitetura%20da%20solucao.png?raw=true)
+
 Para resolver esse problema de negócio, pensei em uma solução completa para armazenamento, tratamento, gestão e automatização de fluxos dos dados utilizando tecnologias como: Docker, Apache Airflow, Minio, MYSQL e Python com as seguintes bibliotecas: Seaborn, PyCaret, Scikit learn, Pandas, Streamlit, Matplotlib.
 
 Depois da infraestrutura devidamente criada e configurada, foram criados e modelados atributos relevantes para análise utilizando fontes de dados diversas como arquivos em formato xlsx, json e dados do Banco de Dados MySQL. O projeto pode ser dividido entre as seguintes etapas:
