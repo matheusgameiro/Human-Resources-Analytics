@@ -9,6 +9,7 @@ A documentação do projeto de data science a seguir descreve um problema de neg
 - Quais fatores influenciam para um colaborador deixar a empresa?
 - Como reter pessoas?
 - Podemos nos antecipar e saber se um determinado colaborador vai sair da empresa?
+- 
 - Como diminuir o turnover?
 Obs: Este projeto foi realizado a partir do curso “Human Resource Analytics” ministrado pela Stack Tecnologias.
 
@@ -91,37 +92,37 @@ A empresa possui uma rotatividade de aproximadamente 24%
 
 ![Satisfacao Empregado x Turnover](https://github.com/matheusgameiro/Human-Resources-Analytics/blob/main/images%20human%20resources/satisfacao%20do%20empregado%20x%20turnover.png?raw=true)
 
-Empregados com o nível de satisfação em 20 ou menos tendem a deixar a empresa.
-Empregados com o nível de satisfação em até 50 tem maior probabilidade de deixar a empresa.
-Existe uma razão para o pico de empregados insatisfeitos?
+- Empregados com o nível de satisfação em 20 ou menos tendem a deixar a empresa.
+- Empregados com o nível de satisfação em até 50 tem maior probabilidade de deixar a empresa.
+- Existe uma razão para o pico de empregados insatisfeitos?
 
 # Salário
 
 ![Salary x Turnover](https://github.com/matheusgameiro/Human-Resources-Analytics/blob/main/images%20human%20resources/employee%20salary%20turnover.png?raw=true)
 
-A maioria dos empregados que saíram tinha salário baixo ou médio.
-Quase nenhum empregado com alto salário deixou a empresa.
-Como é o ambiente de trabalho? Isso se difere por salário?
-O que faz empregados com alto salário sairem da empresa.
+- A maioria dos empregados que saíram tinha salário baixo ou médio.
+- Quase nenhum empregado com alto salário deixou a empresa.
+- Como é o ambiente de trabalho? Isso se difere por salário?
+- O que faz empregados com alto salário sairem da empresa.
 
 # Nota de avaliação do funcionário
 
 ![Avaliacao x Turnover](https://github.com/matheusgameiro/Human-Resources-Analytics/blob/main/images%20human%20resources/nota%20de%20avaliacao%20x%20turnover.png?raw=true)
 
-Temos uma distribuição bimodal para o conjunto que deixou a empresa.
-Colaboradores com baixa performance tendem a deixar a empresa.
-Colaboradores com alta performance tendem a deixar a empresa.
-O ponto ideal para os funcionários que permaneceram está dentro da avaliação de 60 à 80.
-
+- Temos uma distribuição bimodal para o conjunto que deixou a empresa.
+- Colaboradores com baixa performance tendem a deixar a empresa.
+- Colaboradores com alta performance tendem a deixar a empresa.
+- O ponto ideal para os funcionários que permaneceram está dentro da avaliação de 60 à 80.
 
 ## Feature Selection
 
 Esta etapa terá como objetivo selecionar a variáveis que de fato são necessárias para realizar o treinamento do nosso modelo, evitando assim, “overfitting” Para isso, utilizaremos o método DecisionTreeClassifier da biblioteca scikit-learn
-Random Forest;
+
+- Random Forest;
+
 Quando executamos a Random Forest, ele nos diz quais atributos são mais relevantes para incluir no modelo:
 	
 ![Features Importances](https://github.com/matheusgameiro/Human-Resources-Analytics/blob/main/images%20human%20resources/features%20importance.png?raw=true)
-
 
 Com os nossos dados coletados, armazenados, modelados, partimos para a etapa de construção do nosso algoritmo de predição de Turnover. Para otimizar a escolha do melhor algoritmo de machine learning ao nosso problema de negócio, usei a ferramenta PyCaret, que nos indicou que o algoritmo com melhor AUC (métrica de desempenho escolhida) é o modelo Gradient Boosting Classifier, o “gbc”, logo criaremos o modelo e o treinamos.
 
