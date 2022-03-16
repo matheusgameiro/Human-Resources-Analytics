@@ -10,7 +10,6 @@ A documentação do projeto de data science a seguir descreve um problema de neg
 - Como reter pessoas?
 - Podemos nos antecipar e saber se um determinado colaborador vai sair da empresa?
 - Como diminuir o turnover?
-Obs: Este projeto foi realizado a partir do curso “Human Resource Analytics” ministrado pela Stack Tecnologias.
 
 ## Objetivo
 
